@@ -1,0 +1,70 @@
+
+/* Link design Figma https://www.figma.com/file/z6A8F6lPB3unzgnVCdLpBB/Simulador-de-Investimentos?node-id=0%3A1*/
+
+html, body {
+    margin: 0; /* Algumas vezes o browser vem com margin padrão */
+    height: 100%;
+    width: 100%;
+      background-color: #BFE4F0;
+  
+  }
+  
+  header {
+      background-color: #89C1D3;
+      display: flex;
+      justify-content: center; /* */
+  }
+  
+  .banner{
+      background-color: #89C1D3;
+      width: 80%; /* Fica mais responsivo */
+      height: 300px;
+      border-radius: 20px;
+      margin: auto;
+  }
+  
+  h2 {
+      text-align: center;
+      padding-top: 25px;
+  }
+  
+  .button-container{
+    display: flex; /* Aplicando display flex */
+    justify-content: space-around; /*space-around aplica nos FILHOS do button cointaner, ou seja, os buttons */
+    margin-top: 80px; /* Aumenta a margem pra deixar os botões mais pra baixo */
+  }
+  
+  button{
+    align-items: center;
+    padding: 18px 42px;
+    border-radius: 6px;
+    border: none;
+    background: #6E6D70;
+    color: #DFDEDF;
+  }
+  
+  .inputs {
+      margin:20px;
+  }
+  
+  
+  .banner-resposta {
+      background-color: #89C1D3;
+      width: 80%; /* Fica mais responsivo */
+      height: 80%;
+      border-radius: 20px;
+      margin: 30px;
+  }
+  
+  .linha {
+      display: flex;
+  }
+  
+  .opcao{
+      margin:50px;
+    
+  /*  Adicionei esse código  
+    display: flex;
+    flex: 1;
+    align-items: center;*/
+  }

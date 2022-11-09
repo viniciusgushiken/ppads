@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>investimentos</title>
+	<link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	
+</head>
+
+<body>
+	
+  <header> 
+	  <h1>Simulador de Investimentos</h1>
+  </header>
+	
+	<section>
+
+	<form action="{{ url_for('calcular') }}" method="POST">
+
+
+		<div class="inputs">
+			<p>Certifique-se que suas datas não são fins de semana, feridados e que a empresa já tinha seu capital aberto na bolsa de valores americana</p>
+		  <label for="ticker">Ticker:</label><br>
+		  <input type="text" id="ticker" name="ticker" value="AAPL"><br>
+		</div>
+
+		<div class="inputs">
+		  <label for="valor">Valor investido:</label><br>
+		  <input type="number" id="valor" name="valor" value="1000"><br>
+		</div>
+
+		<div class="inputs">
+			<label for="data-inicial">Data Inicial:</label><br>
+			<input type="date" id="data_inicial" name="data_inicial"><br>
+		</div>
+
+		<div class="inputs">
+			<label for="data-final">Data Final:</label><br>
+			<input type="date" id="data_final" name="data_final"><br>
+		</div>
+
+		<div class="inputs">
+	 	 <input type="submit" value="Simular">
+		</div>
+	</form>
+
+	</section>
+
+</body>
+
+</html>

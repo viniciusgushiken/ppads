@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>investimentos</title>
+	<link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	
+</head>
+
+<body>
+
+  <header> 
+	  <h1>Simulador de Investimentos</h1>
+  </header>
+
+	<div class="banner-resposta">
+
+		<div class="linha">
+			
+			<div class="opcao">
+				<h3>Ticker da empresa:</h3>
+				<p>{{ticker}}</p>
+			</div>
+		
+			<div class="opcao">
+				<h3>Valor inicial investido:</h3>
+				<p>${{valor_inicial}}</p>
+			</div>
+	
+			<div class="opcao">
+				<h3>Data inicial:</h3>
+				<p>{{data_inicial}}</p>
+			</div>	
+			
+		</div>
+
+		<div class="linha">
+			
+			<div class="opcao">
+				<h3>Data final:</h3>
+				<p>{{data_final}}</p><br>
+			</div>
+	
+			<div class="opcao">			
+				<h3>Valor da ação na data inicial:</h3>
+				<p>${{valor_acao_data_inicial}}</p><br>
+			</div>
+	
+			<div class="opcao">		
+				<h3>Valor da ação na data final:</h3>
+				<p>${{valor_acao_data_final}}</p><br>
+			</div>
+			
+		</div>
+
+		<div class="linha">
+			<div class="opcao">	
+				<h3>Valorização:</h3>
+				<p>{{valorizacao_porcentagem}}%</p><br>
+			</div>
+	
+			<div class="opcao">
+				<h3>Valor inicial investido:</h3>
+				<p>${{valor_inicial}}</p><br>
+			</div>
+	
+			<div class="opcao">
+				<h3>Valor atual do investimento:</h3>
+				<p>${{valor_final}}</p><br>
+			</div>
+			
+			<div class="opcao">
+				<h3>Lucro/Prejuizo:</h3>
+				<p> ${{lucro}}</p><br>
+			</div>
+		
+		</div>
+		
+		<div class="opcao">	
+			<a href="{{ url_for('simulador') }}">Simular Novamente</a><br>
+		</div>
+	</div>
+
+</body>
+
+</html>
