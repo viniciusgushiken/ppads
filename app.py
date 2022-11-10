@@ -13,11 +13,12 @@ from flask_bcrypt import Bcrypt
 # import sys
 
 app = Flask(__name__)
-db = SQLAlchemy(app) # cria a instancia do db
+
 bcrypt = Bcrypt(app) # para hashear a senha
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SECRET_KEY'] = 'thisisasecretkey'
+db = SQLAlchemy(app) # cria a instancia do db
 
 login_manager = LoginManager()
 login_manager.init_app(app)
