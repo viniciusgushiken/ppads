@@ -11,6 +11,7 @@ O app possui um sistema de autenticação, em que armazena seu login e senha em 
 ## Instalação
 
 1. Clone o repositório
-2. Instale as bibliotecas necessárias que estão contidas no arquivo `requirements.txt`.
+2. Instale as bibliotecas necessárias que estão contidas no arquivo `requirements.txt`, execute no terminal:
+    `pip3 install -r requirements.txt`
 3. Para rodar o app, execute no terminal `python3 -m flask run`, isso iniciara o servidor local
 
